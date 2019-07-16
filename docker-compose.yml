@@ -1,0 +1,15 @@
+version: "3"
+
+services:
+  addreview:
+    container_name: addreview
+    build: .
+    depends_on:
+      - "database"
+    ports:
+      - "80:3004"
+
+  database:
+    container_name: steam_add_review_db
+    image: mongo:latest
+

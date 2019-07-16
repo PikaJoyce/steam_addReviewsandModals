@@ -1,0 +1,20 @@
+import React from 'react';
+const styled = window.styled;
+
+const Bg = styled.div`
+  color: #8f98a0;
+  font-size: 12px;
+  margin-bottom: 1px;
+  margin-top: 3px;
+  font-family: Arial, Helvetica, sans-serif;
+`;
+
+const HoursPlayed = () => {
+  return (
+    <Bg>
+      <div>3,140.2 hrs on record </div>
+    </Bg>
+  );
+};
+
+export default HoursPlayed;
